@@ -75,3 +75,57 @@ main {
         padding-right: 1.5rem !important;
     }
 }
+
+/* MainLayout local styles */
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(45, 38, 33, 0.04);
+}
+
+.site-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 32px 20px;
+}
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border-light);
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #6B675F;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 12px 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .site-header-nav {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .site-content {
+    padding: 20px 14px;
+  }
+}

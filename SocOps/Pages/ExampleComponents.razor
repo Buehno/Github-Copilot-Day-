@@ -1,0 +1,286 @@
+@* Example: Como usar o novo tema Aconchegante nos componentes *@
+
+@page "/example-components"
+
+<div class="stack">
+    <!-- Hero Section -->
+    <section class="text-center mb-lg">
+        <h1>Exemplos de Componentes</h1>
+        <p class="text-muted">Referência visual para implementar o tema Aconchegante</p>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="stack">
+        <h2>Botões</h2>
+        
+        <div class="stack">
+            <div class="flex gap-sm">
+                <button class="btn btn-primary">Primário</button>
+                <button class="btn btn-ghost">Secundário</button>
+            </div>
+            
+            <div class="flex gap-sm">
+                <button class="btn btn-primary btn-sm">Pequeno</button>
+                <button class="btn btn-primary btn-lg">Grande</button>
+            </div>
+            
+            <button class="btn btn-primary btn-block">Bloqueado 100%</button>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="stack">
+        <h2>Cards</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Título do Card</h3>
+            </div>
+            <div class="card-body">
+                <p>Conteúdo principal do card com texto e elementos.</p>
+            </div>
+            <div class="card-footer flex-between">
+                <button class="btn btn-ghost btn-sm">Ação 1</button>
+                <button class="btn btn-primary btn-sm">Ação 2</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="stack">
+        <h2>Formulários</h2>
+        
+        <form class="stack">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input id="name" type="text" placeholder="Digite seu nome" />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="seu.email@example.com" />
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Text Utilities -->
+    <section class="stack">
+        <h2>Tipografia & Utilitários</h2>
+        
+        <div class="stack gap-md">
+            <div>
+                <h3>Heading 3</h3>
+                <p class="text-muted">Parágrafo com classe text-muted</p>
+            </div>
+            
+            <div class="text-center">
+                <p>Texto <span class="font-bold">negrito</span> e <span class="font-semibold">semibold</span></p>
+            </div>
+            
+            <div>
+                <p class="text-sm">Texto pequeno (text-sm)</p>
+                <p class="text-lg">Texto grande (text-lg)</p>
+            </div>
+            
+            <div>
+                <p class="uppercase">Texto em maiúsculas</p>
+                <p class="lowercase">TEXTO EM MINÚSCULAS</p>
+                <p class="capitalize">texto com capitalize</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bingo Board Example -->
+    <section class="stack">
+        <h2>Bingo Board</h2>
+        
+        <div class="bingo-board grid-5">
+            <button class="bingo-square">FREE</button>
+            <button class="bingo-square selected">Selected</button>
+            <button class="bingo-square">Item 3</button>
+            <button class="bingo-square">Item 4</button>
+            <button class="bingo-square">Item 5</button>
+            <button class="bingo-square">Item 6</button>
+            <button class="bingo-square">Item 7</button>
+            <button class="bingo-square">Item 8</button>
+            <button class="bingo-square">Item 9</button>
+            <button class="bingo-square">Item 10</button>
+            <button class="bingo-square">Item 11</button>
+            <button class="bingo-square selected">Selected</button>
+            <button class="bingo-square">Item 13</button>
+            <button class="bingo-square">Item 14</button>
+            <button class="bingo-square">Item 15</button>
+            <button class="bingo-square">Item 16</button>
+            <button class="bingo-square">Item 17</button>
+            <button class="bingo-square">Item 18</button>
+            <button class="bingo-square">Item 19</button>
+            <button class="bingo-square">Item 20</button>
+            <button class="bingo-square">Item 21</button>
+            <button class="bingo-square">Item 22</button>
+            <button class="bingo-square">Item 23</button>
+            <button class="bingo-square">Item 24</button>
+            <button class="bingo-square selected">Item 25</button>
+        </div>
+    </section>
+
+    <!-- Spacing Examples -->
+    <section class="stack">
+        <h2>Espaçamento (Margin & Padding)</h2>
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div class="card" style="flex: 1; min-width: 150px;">
+                <p class="mb-md">mb-md (margin-bottom)</p>
+            </div>
+            <div class="card" style="flex: 1; min-width: 150px;">
+                <p class="mt-lg">mt-lg (margin-top)</p>
+            </div>
+            <div class="card" style="flex: 1; min-width: 150px;">
+                <div class="px-md py-md">px-md + py-md</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shadows & Elevation -->
+    <section class="stack">
+        <h2>Sombras & Elevação</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+            <div class="card shadow">
+                <p class="text-center text-sm">shadow</p>
+            </div>
+            <div class="card shadow-md">
+                <p class="text-center text-sm">shadow-md</p>
+            </div>
+            <div class="card shadow-lg">
+                <p class="text-center text-sm">shadow-lg</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colors Reference -->
+    <section class="stack">
+        <h2>Cores (Reference)</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
+            <div style="background: #F6EFE9; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 600; color: #7D5A3C;">Primary BG</div>
+                <div style="font-size: 12px; color: #9D9691;">#F6EFE9</div>
+            </div>
+            
+            <div style="background: #FFFFFF; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 600; color: #7D5A3C;">Panel</div>
+                <div style="font-size: 12px; color: #9D9691;">#FFFFFF</div>
+            </div>
+            
+            <div style="background: #EADFCB; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 600; color: #7D5A3C;">Accent Light</div>
+                <div style="font-size: 12px; color: #9D9691;">#EADFCB</div>
+            </div>
+            
+            <div style="background: #C99B73; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center; color: white;">
+                <div style="font-weight: 600;">Accent Primary</div>
+                <div style="font-size: 12px;">#C99B73</div>
+            </div>
+            
+            <div style="background: #D17C5A; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center; color: white;">
+                <div style="font-weight: 600;">CTA Primary</div>
+                <div style="font-size: 12px;">#D17C5A</div>
+            </div>
+            
+            <div style="background: #7D5A3C; border: 1px solid #E7E2DE; padding: 16px; border-radius: 8px; text-align: center; color: white;">
+                <div style="font-weight: 600;">Text Primary</div>
+                <div style="font-size: 12px;">#7D5A3C</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Grid -->
+    <section class="stack">
+        <h2>Grid Responsivo</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+            <div class="card">
+                <h3>Col 1</h3>
+                <p class="text-muted">Redimensione a janela para ver o grid se adaptar</p>
+            </div>
+            <div class="card">
+                <h3>Col 2</h3>
+                <p class="text-muted">Mobile: 1 coluna, Tablet: 2 colunas, Desktop: 3+</p>
+            </div>
+            <div class="card">
+                <h3>Col 3</h3>
+                <p class="text-muted">Responsive design mobile-first</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Examples -->
+    <section class="stack">
+        <h2>Animações</h2>
+        
+        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+            <div class="animate-fadeIn" style="background: linear-gradient(135deg, #EADFCB, #C99B73); padding: 16px; border-radius: 8px; color: white; font-weight: 600;">
+                fadeIn
+            </div>
+            <div class="animate-slideUp" style="background: linear-gradient(135deg, #D17C5A, #B45D3E); padding: 16px; border-radius: 8px; color: white; font-weight: 600;">
+                slideUp
+            </div>
+            <div class="animate-pulse" style="background: #C99B73; padding: 16px; border-radius: 8px; color: white; font-weight: 600;">
+                pulse
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Check -->
+    <section class="stack mb-lg">
+        <h2>Validação de Acessibilidade</h2>
+        
+        <div class="card">
+            <h3>Requisitos WCAG 2.1 AA</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>✅ Contraste de texto: 4.5:1 (mínimo)</li>
+                <li>✅ Focus visível em todos os elementos</li>
+                <li>✅ Navegação por teclado funcional</li>
+                <li>✅ Labels em inputs (com for/aria-label)</li>
+                <li>✅ Alt text em imagens</li>
+                <li>✅ ARIA roles/states onde necessário</li>
+                <li>✅ Cores não como único indicador</li>
+                <li>✅ Resize de texto até 200%</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<style>
+    /* Estilos locais para esta página de exemplo */
+    section {
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: var(--space-lg);
+    }
+    
+    section:last-child {
+        border-bottom: none;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: var(--space-md);
+    }
+    
+    ul {
+        margin-left: var(--space-md);
+    }
+    
+    li {
+        margin-bottom: var(--space-sm);
+        font-size: 0.95rem;
+    }
+</style>
